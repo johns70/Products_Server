@@ -7,7 +7,7 @@ const { createProductSchema, updateAllProductSchema ,updateProductSchema, getPro
 
 const service = new ProductService();
 
-Router.get("api/Example", async (req, res) => {
+Router.get("/api/Example", async (req, res) => {
 
  await res.json([
     {
@@ -21,7 +21,7 @@ Router.get("api/Example", async (req, res) => {
   ])
 })
 
-Router.get("api/", async(req, res) => {
+Router.get("/api", async(req, res) => {
   try {
     const products = await service.find();
     res.json(products)

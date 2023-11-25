@@ -5,7 +5,7 @@ const routerApi = require("./routers/");
 const { logError, errorHandler, boomErrorHandler } = require("./midlewares/errorHandler")
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 2000;
 
 
 const whiteList = ['http://localhost:2000', 'htttps://myapp.com']
