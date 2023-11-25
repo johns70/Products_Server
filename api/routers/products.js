@@ -7,6 +7,11 @@ const { createProductSchema, updateAllProductSchema ,updateProductSchema, getPro
 
 const service = new ProductService();
 
+Router.get("/",  (req, res) => {
+  res.send("Home")
+})
+
+
 Router.get("/api/Example", async (req, res) => {
 
  await res.json([
