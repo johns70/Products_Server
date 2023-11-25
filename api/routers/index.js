@@ -8,7 +8,7 @@ const homeRouter = require("./Home")
 
 
 function routerApi(app) {
- app.use("/Api/v1", Router)
+ app.use("/api/v1", Router)
   Router.use("/products", productsRouter)
   Router.use("/users", userRouter)
   Router.use("/categories", categoriesRouter)
